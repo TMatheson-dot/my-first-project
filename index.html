@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trevor Matheson</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Avenir Next', 'Avenir', 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #f4f9f4;
+      color: #1c1c1c;
+      min-height: 100vh;
+    }
+
+    /* Nav bar */
+    nav {
+      background: #1a3a2a;
+      padding: 0 2rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #2ca01c;
+      letter-spacing: -0.3px;
+    }
+
+    .nav-logo span {
+      color: #ffffff;
+    }
+
+    /* Hero section */
+    .hero {
+      background: #1a3a2a;
+      color: #ffffff;
+      padding: 4rem 2rem 5rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 span {
+      color: #2ca01c;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #a8c5a0;
+      max-width: 480px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2ca01c;
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 0.75rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: background 0.15s;
+    }
+
+    .btn:hover {
+      background: #238515;
+    }
+
+    /* Main content */
+    main {
+      max-width: 700px;
+      margin: -2.5rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 2.5rem 3rem;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.09);
+      margin-bottom: 1.5rem;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #2ca01c;
+      margin-bottom: 0.6rem;
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #1a3a2a;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #4a4a4a;
+    }
+
+    .learning-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .learning-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-size: 1rem;
+      color: #2a2a2a;
+      padding: 0.75rem 1rem;
+      background: #f4f9f4;
+      border-radius: 6px;
+      border-left: 3px solid #2ca01c;
+    }
+
+    .item-num {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #2ca01c;
+      min-width: 20px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9cae9c;
+      padding-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Trevor<span>Matheson</span></div>
+  </nav>
+
+  <div class="hero">
+    <h1>Hi, I'm <span>Trevor Matheson</span></h1>
+    <p>Lifelong learner, problem solver, and someone who believes technology should make life simpler.</p>
+    <a href="mailto:TMatheson@quickbookstraining.com" class="btn">Get in Touch</a>
+  </div>
+
+  <main>
+    <div class="card">
+      <p class="section-label">A little about me</p>
+      <p>
+        Hi, I'm Trevor — I enjoy building things, exploring new ideas, and
+        figuring out how technology can make everyday work easier. When I'm not
+        at my desk, you'll find me napping or watching Netflix.
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="section-label">Currently Learning</p>
+      <h2>What I'm working on</h2>
+      <ul class="learning-list">
+        <li><span class="item-num">01</span>HTML &amp; CSS fundamentals</li>
+        <li><span class="item-num">02</span>Git &amp; version control workflows</li>
+        <li><span class="item-num">03</span>JavaScript basics</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Trevor Matheson
+  </footer>
+
+</body>
+</html>
